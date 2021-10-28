@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  database:
+    image: mysql:5.6
+    env_file:
+      - .env
+  web:
+    build: .
+    depends_on:
+      - database
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/BookNotes
