@@ -1,0 +1,615 @@
+.hidden-xs {
+    display: none;
+}
+
+.card-img {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container-homepage {
+    background-image: url('../images/Book.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.centered-div {
+    background-color: rgba(255,255,255,0.3);
+    width: 50%;
+    max-width: 50%;
+}
+
+.login-here {
+    color: black;
+}
+
+.login-here:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.auth-link {
+    display: revert;
+}
+
+.card-title-tag {
+    font-size: 30px;
+    text-decoration: none!important;
+    color: black;
+}
+
+.card-title-tag:hover {
+    color: grey;
+}
+
+.cover-link {
+    width: 170px;
+    height: 250px;
+}
+
+.note-title {
+    height: 60px;
+    font-size: 45px;
+}
+
+.cover-container {
+    max-width: 200px;
+}
+
+.note-info {
+    font-size: 20px;
+}
+
+.intro-container,
+.body-container {
+    padding-left: 7rem;
+}
+
+.note-container {
+    padding: 100px;
+}
+
+.info-card {
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.library-tagline,
+.card-text,
+.card-title-tag,
+.user-tagline,
+.note-title,
+.note-info,
+.intro-title,
+.body-title,
+.intro-note,
+.body-note {
+    font-family: "Source Sans Pro";
+}
+
+.card-text {
+    height: 140px;
+    overflow-y: auto;
+}
+
+.intro-note,
+.body-note {
+    font-size: 20px;
+}
+
+.card-note-child {
+    height: 100%;
+}
+
+.buttons-container {
+    height: 45px;
+}
+
+/* RESPONSIVE DESIGN for homepage */
+
+@media screen and (max-width: 660px){
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .btn {
+        font-size: 10px;
+        width: 60px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .centered-div {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .centered-div {
+        max-width: 200px;
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    /* create notes page responsive */
+    .buttons-container {
+        width: 250px;
+    }
+    .auth-button,
+    .notes-button {
+        height: 30px;
+        width: 110px;
+        padding: 7px;
+    }
+
+    .logo,
+    .create-tagline {
+        font-size: 30px;
+    }
+     /* library page responsive */
+    .book-container {
+        padding: 2rem 4rem!important;
+    }
+    .card-notes {
+        min-width: 200px!important;
+        height: auto !important;
+        margin-right: 0!important;
+    }
+    .img-container {
+        height: auto;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .card-img {
+        min-height: auto!important;
+        padding: 10px;
+        width: 150px;
+    }
+    .library-tagline {
+        padding: 10px;
+        font-size: 25px;
+    }
+
+
+    .login-title,
+    .user-tagline {
+        font-size: 30px;
+    }
+
+    /* Note page */
+    .note-container {
+        padding: 60px;
+    }
+    .info-card {
+        max-width: 300px;
+        padding: 20px;
+    }
+
+    .cover-link {
+        height: 250px;
+    }
+    .note-title {
+        font-size: 30px;
+    }
+    .intro-container,
+    .body-container {
+        padding-left: 0;
+    }
+
+    /* error page */
+    .error-child-container {
+        padding: 30px;
+    }
+
+    .error-button {
+        width: 80px!important;
+        height: 35px!important;
+        margin-left: 0!important;
+    }
+
+    .error-404-advice {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 780px) and (min-width: 500px) {
+    .card-notes {
+        margin-right: 0!important;
+    }
+
+    .book-container {
+        padding: 2rem 4rem!important;
+    }
+
+    .library-tagline {
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    .auth-button,
+    .notes-button {
+        width: 130px;
+    }
+
+    /* Note page */
+    .info-card {
+        max-width: 600px;
+        padding: 20px!important;
+    }
+    .note-container{
+        padding: 60px;
+    }
+
+    /*.card-img {*/
+    /*    height: 250px;*/
+    /*    width: 200px;*/
+    /*}*/
+    .tagline-container {
+        max-width: 300px;
+    }
+    .note-title {
+        font-size: 30px;
+    }
+    .intro-container,
+    .body-container{
+        padding-left: 1rem;
+    }
+    .cover-container {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 800px){
+    .book-container {
+        padding: 2rem 12rem!important;
+    }
+
+    .card-notes {
+        margin-right: 0!important;
+    }
+
+    .library-tagline {
+        padding: 20px;
+    }
+
+    /* Note page */
+    .info-card {
+        max-width: 100%;
+        padding: 60px;
+    }
+    .tagline-container {
+        max-width: 500px;
+    }
+    .intro-container,
+    .body-container {
+        padding-left: 2rem;
+    }
+    .note-title {
+        font-size: 30px;
+    }
+    /*.cover-container {*/
+    /*    max-width: 30%;*/
+    /*}*/
+
+}
+
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+    .book-container {
+        padding: 2rem 14rem!important;
+    }
+    .centered-div {
+        height: 270px;
+    }
+    .auth-button {
+        width: 100px;
+    }
+
+    .cover-container {
+        max-width: 185px;
+    }
+
+    .cover-link {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 2700px) and (min-width: 2000px){
+    .book-container {
+        padding: 2rem 40rem!important;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .centered-div {
+        max-width: 85%;
+        padding: 6%;
+    }
+
+    .intro-title,
+    .body-title {
+        font-size: 30px;
+    }
+
+    .intro-note,
+    .body-note {
+        font-size: 15px;
+    }
+
+    .login-title {
+        font-size: 30px;
+    }
+
+    /* responsive for user_notes and library pages */
+    .user-tagline {
+        font-size: 30px;
+    }
+
+    .logo-container {
+        text-align: center;
+    }
+    .notes-button,
+    .auth-button {
+        width: 100px;
+        padding: 7px;
+    }
+
+    .background-div {
+        min-height: 150vh;
+    }
+    .book-container {
+        padding: 30px!important;
+        margin-top: 10px !important;
+    }
+    .img-container {
+        padding: 10px;
+    }
+    .card-notes {
+        min-width: 200px!important;
+        /*min-height: auto!important;*/
+        height: auto!important;
+        margin-right: 0 !important;
+    }
+    .card-img {
+        width: 140px;
+        min-height: 70px!important;
+    }
+    .library-tagline {
+        font-size: 28px;
+    }
+
+    /* responsive for create-notes */
+    .create-tagline {
+        font-size: 30px;
+    }
+
+    /* error page */
+    .error-container {
+        padding: 40px!important;
+    }
+
+    .error-child-container {
+        padding: 0;
+    }
+
+    .note-container {
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .info-card {
+        max-width: 100%;
+    }
+
+    .intro-note,
+    .body-note{
+        font-size: 15px;
+    }
+
+    .intro-title,
+    .body-title{
+        font-size: 25px;
+    }
+
+    .logo-section {
+        height: 100px;
+    }
+
+    .cover-container {
+        max-width: 190px!important;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    h1 {
+        font-size: 15px;
+    }
+
+
+    p {
+        font-size: 10px;
+    }
+
+    .centered-div {
+        height: 70%;
+        padding: 10%;
+        max-width: 100%;
+    }
+}
+
+/* SIGNUP PAGE */
+/*header {*/
+/*    background-color: white;*/
+/*}*/
+.background-div {
+    min-height: 100vh;
+    background-color: #B0C4DE;
+    padding: 0;
+
+}
+
+.logo-section {
+    padding: 1%;
+    background-color: white;
+}
+
+.logo {
+    font-size: 35px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none !important;
+    font-family: Piazolla;
+}
+
+.logo:hover {
+    color: grey;
+}
+
+.signup-button {
+    width: 100%;
+    min-height: 8vh;
+}
+
+.error-message{
+    max-width: 33%;
+}
+
+.error-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* RESPONSIVE DESIGN for signup page */
+@media screen and (max-width: 430px) {
+    .signup-title {
+        font-size: 35px;
+    }
+}
+
+.register-alert {
+    width: 100%;
+}
+
+.book-container {
+    padding: 2rem 5rem;
+    border-radius: 10px;
+}
+
+.note-image {
+    width: 120px;
+}
+
+.card-notes:nth-child(odd) {
+    margin-right: 80px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.note-author,
+.note-rate,
+.note-intro {
+    font-size: 15px;
+}
+
+
+
+.card-notes {
+    min-width: 500px;
+    max-width: 600px;
+    /*height: 270px;*/
+   /*height: fit-content;*/
+
+}
+
+.card-title-tag {
+    font-size: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 250px;
+}
+
+
+.no-notes {
+    text-decoration: none !important;
+}
+
+/* responsive for landscape */
+@media screen and (max-height: 375px) and (max-width: 700px) {
+    .book-container {
+        padding: 4rem!important;
+    }
+    .card-notes {
+        min-width: 250px!important;
+        height: auto;!important;
+        padding-top: 10px;
+    }
+
+    .card-img {
+        width: 130px;
+        height: 200px;
+        min-height: 50px;
+    }
+
+    /*.buttons-container {*/
+    /*    width: 100px;*/
+    /*}*/
+
+    .logo-container {
+        max-width: 180px;
+    }
+    .notes-button,
+    .auth-button {
+        min-width: 70px;
+    }
+}
+
+.error-container {
+    height: 100vh;
+    padding: 150px;
+    background-color: #B0C4DE;
+}
+
+.error404 {
+    max-width: 400px;
+    height: 100px;
+}
+
+.error-404-message {
+    height: fit-content;
+    font-family: "Quicksand";
+}
+
+.error-404-advice{
+    height: fit-content;
+    font-family: "Quicksand";
+    max-width: 400px;
+}
+
+.error-button {
+    height: 50px;
+    width: 100px;
+    margin-left: 150px;
+}
+

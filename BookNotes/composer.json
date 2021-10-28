@@ -1,0 +1,12 @@
+{
+    "name": "ally/book-notes",
+    "require": {
+        "ext-pdo": "*",
+        "vlucas/phpdotenv": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "BookNotes\\": "app/"
+        }
+    }
+}
