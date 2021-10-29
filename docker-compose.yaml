@@ -12,3 +12,8 @@ services:
       - "3000:3000"
     volumes:
       - ./:/usr/src/BookNotes
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"

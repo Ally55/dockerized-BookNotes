@@ -8,6 +8,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 COPY ./ /usr/src/BookNotes/
 
-RUN composer install
+# COPY ./composer.json /usr/src/BookNotes/
+# COPY ./compose.lock /usr/src/BookNotes/
+
+RUN composer install 
 
 CMD ["php", "-S", "0.0.0.0:3000", "-t", "./public"]
