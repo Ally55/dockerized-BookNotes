@@ -4,12 +4,14 @@ services:
     image: mysql:5.6
     env_file:
       - .env
+    volumes:
+      - db-datavolume:/var/lib/mysql
   web:
     build: .
     depends_on:
       - database
     ports:
-      - "3000:3000"
+      - "3000:80"
     volumes:
       - ./:/usr/src/BookNotes
   adminer:
@@ -17,3 +19,5 @@ services:
     restart: always
     ports:
       - "8080:8080"
+volumes:
+  db-datavolume:
