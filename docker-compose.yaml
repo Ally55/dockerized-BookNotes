@@ -20,4 +20,6 @@ services:
     ports:
       - "8080:8080"
 volumes:
-  db-datavolume:
+  db-datavolume: #to add
+    driver: local
+    
