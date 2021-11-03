@@ -3,6 +3,8 @@ language: generic
 services:
   - docker
 
+dist: bionic
+
 before_install:
   - docker build -t ally/booknotes -f Dockerfile ./
 
