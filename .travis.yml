@@ -1,10 +1,17 @@
 sudo: required
-language: generic
+language: php
 services:
   - docker
 
 dist: bionic
+# add this to resolve docker building error for travis ci
+# error: ls: cannot access '.': Operation not permitted
 
 before_install:
   - docker build -t ally/booknotes -f Dockerfile ./
 
+before_script:
+  - php composer.phar install
+  - composer require --dev phpunit/phpunit
+
+script: vendor/bin/phpunit --debug
