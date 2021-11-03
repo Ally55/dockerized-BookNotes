@@ -11,7 +11,7 @@ before_install:
   - docker build -t ally/booknotes -f Dockerfile ./
 
 before_script:
-  - php composer.phar install
+#  - php composer.phar install
   - composer require --dev phpunit/phpunit
 
 script: vendor/bin/phpunit --debug
