@@ -3,7 +3,12 @@ FROM php:8.0-apache
 WORKDIR /usr/src/BookNotes
 
 # install dependencies
-RUN apt-get update && apt-get install -y vim bash && docker-php-ext-install mysqli pdo pdo_mysql 
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    zip \
+    vim \
+    bash \
+    && docker-php-ext-install mysqli pdo pdo_mysql 
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
