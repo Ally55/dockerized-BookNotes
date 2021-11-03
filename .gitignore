@@ -3,3 +3,5 @@
 /vendor/
 
 .env
+
+/docker/database/9ED39E02D146CA5A45AABAF2FCC3A63C.sql

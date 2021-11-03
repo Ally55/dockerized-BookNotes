@@ -16,4 +16,4 @@ before_script:
 #  - php composer.phar install
   - composer require --dev phpunit/phpunit ^9.5
 
-script: vendor/bin/phpunit ./tests/StackTest.php
+script: vendor/bin/phpunit ./tests
