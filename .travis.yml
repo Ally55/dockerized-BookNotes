@@ -22,7 +22,7 @@ deploy:
   provider: elasticbeanstalk
   region: "eu-central-1"
   app: "dockerized-booknotes"
-  env: "Dockerizedbooknotes-env"
+  env: "Dockerizedbooknotes-env-1"
   bucket_name: "elasticbeanstalk-eu-central-1-707803746339"
   bucket_path: "dockerized-booknotes"
   on:
