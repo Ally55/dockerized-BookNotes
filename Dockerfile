@@ -25,6 +25,6 @@ RUN a2ensite 000-default.conf
 
 RUN a2enmod rewrite
 
-ADD ./docker/database/9ED39E02D146CA5A45AABAF2FCC3A63C.sql /docker-entrypoint-initdb.d
+#ADD ./docker/database/9ED39E02D146CA5A45AABAF2FCC3A63C.sql /docker-entrypoint-initdb.d
 
 #CMD ["php", "-S", "0.0.0.0:3000", "-t", "./public"]
