@@ -23,7 +23,10 @@ deploy:
   region: "eu-central-1"
   app: "dockerized-booknotes"
   env: "Dockerizedbooknotes-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-707803746339"
+  bucket_path: "dockerized-booknotes"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
+
